@@ -1,8 +1,5 @@
 tin man
 =======
-
-About
------
 tin man is a [WordPress](http://wordpress.org) adaptation of the default theme dorothy for the blogging platform [toto](http://cloudhead.io/toto). It is built on the barebones [Starkers theme](http://starkerstheme.com/).
 
 Installation
