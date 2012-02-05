@@ -1,0 +1,325 @@
+/*
+Theme Name: tin man
+Description: A Wordpress adaptation of dorothy, the default theme for the blogging platform toto. Uses the starkers theme (http://starkerstheme.com) as a starting point. Check out toto at http://cloudhead.io/toto
+Author: Devers Talmage
+Author URI: tin-man.deve.rs
+Version: 0.1
+*/
+/*--------------------------------------------
+    Reset Reloaded - by Eric Meyer
+----------------------------------------------*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+ol, ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+
+/****** GENERAL *****/
+body {
+  background: #FFF;
+  font-family: Georgia, serif;
+  font-size: 19px;
+  color: #222;
+  line-height: 1.55em;
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+}
+a {
+  color: #b84f4d;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+h1, h2, h2 a {
+  font-family: 'Noticia Text', serif;
+  color: #222;
+  font-size: 28px;
+  text-decoration: none;
+  line-height: 1.4em;
+  margin-bottom: 35px;
+  padding: 0 0 5px 0;
+  border-bottom: 0;
+}
+h1 {
+  display: inline;
+  font-weight: 700;
+}
+h2 a:hover {
+  color: #b84f4d;
+  text-decoration: none;
+}
+h3 {
+  font-family: 'Noticia Text', serif;
+  font-size: 22px;
+  color: #222;
+  padding: 30px 0;
+  color: #333;
+}
+h4 {
+  color: #222;
+  font-size: 19px;
+  font-style: italic;
+  letter-spacing: 1px;
+  padding: 20px 0 20px 0;
+}
+p {
+  margin-bottom: 1.6em;
+}
+blockquote {
+  padding: 16px 35px 1px 50px;
+  margin-bottom: 20px;
+}
+cite {
+  font-style: italic;
+  display: block;
+  text-align: right;
+}
+code {
+  font-family: Courier, monospace;
+}
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+ul {
+  list-style: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+code {
+  font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
+}
+pre {
+  padding: 20px;
+}
+blockquote {
+  font-style: italic;
+}
+li { list-style: none; }
+body > footer {
+  text-align: left;
+  margin-left: 10px;
+  font-style: italic;
+  font-size: 18px;
+  color: #888;
+}
+
+
+/****** HEADER *****/
+header {
+  font-family: 'Noticia Text', serif;
+  padding: 60px 0 12px 0;
+  margin-bottom: 60px;
+}
+header nav {
+  float: right;
+  font-size: 15px;
+}
+header nav a {
+  color: #444;
+  margin: 0 6px;
+}
+header nav a:hover {
+  color: #b84f4d;
+  text-decoration: none;
+}
+#title {
+  font-size: 20px;
+  color: #D5D5D5;
+}
+#title:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+/****** POSTS *****/
+#content {
+}
+#by {
+	font-style: italic;
+  margin-right: 5px;
+	font-size: 28px;
+}
+#caption {
+	position: absolute;
+	font-size: 24px;
+	margin: -135px 0 0 70px;
+}
+#path {
+	color: #b53131;
+}
+.date {
+  font-style: italic;
+  float: right;
+  line-height: 43px;
+  margin-right: 30px;
+}
+.post a {
+  color: #b83000;
+}
+.post h1 a {
+  color: black;
+  text-decoration: none;
+}
+.post a:hover {
+  text-decoration: underline;
+}
+
+.post header {
+	margin-bottom: 10px;
+  padding: 0;
+}
+.post .body p:first-child {
+	margin-top: 0;
+}
+.post .body p:last-child {
+	margin-bottom: 0;
+}
+.post {
+	margin-bottom: 30px;
+}
+.post:last-child {
+  margin-bottom: 10px;
+}
+.post p {
+  margin: 10px 0;
+}
+.post .more {
+  margin-top: -10px;
+  margin-right: 30px;
+  font-style: italic;
+  text-align: right;
+}
+.more a {
+  text-decoration: none;
+}
+.more a:hover { text-decoration: underline }
+
+/****** ARCHIVES ****/
+.archive-article {
+  padding-bottom: 5px;
+}
+.archive-date {
+  font-style: italic;
+  line-height: 43px;
+  margin-left: 10px;
+  color: #D5D5D5;
+}
+
+
+/****** iPhone Optimized ****/
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  body {
+    width: auto;
+  }
+
+  header #title {
+    font-size: 7em;
+  }
+
+  .post .header {
+    font-size: 2em;
+  }
+
+  .post .content {
+    font-size: 2em;
+    width: 95%;
+  }
+}
