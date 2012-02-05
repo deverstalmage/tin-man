@@ -4,4 +4,8 @@ tin man is a [WordPress](http://wordpress.org) adaptation of the default theme d
 
 Installation
 ------------
-Clone this repository to your themes diretcory in your WordPress install (wordpress-directory/wp-content/themes/)
+Clone this repository to your themes directory in your WordPress install (**_your-wordpress-directory_/wp-content/themes/**). 
+
+Navigation
+----------
+To enable the top navigation links, create a custom menu under **Appearance -> Menus** and set the menu as the primary navigation
